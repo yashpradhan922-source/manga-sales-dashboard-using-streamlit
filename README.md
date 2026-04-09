@@ -80,7 +80,18 @@ statsmodels
 
 ## 📸 Screenshots
 
-*Add your dashboard screenshots here*
+<img width="1919" height="972" alt="image" src="https://github.com/user-attachments/assets/611fac24-e456-46bc-8813-fadc1aae3de6" />
+<img width="1919" height="968" alt="image" src="https://github.com/user-attachments/assets/c7715195-a171-4341-8da2-4b28b1a26d48" />
+<img width="1916" height="969" alt="image" src="https://github.com/user-attachments/assets/1f995c2d-c21d-4459-8660-c674c8608c46" />
+<img width="1918" height="968" alt="image" src="https://github.com/user-attachments/assets/77bcd94a-4766-46bd-a38a-30eaee42967f" />
+<img width="1917" height="965" alt="image" src="https://github.com/user-attachments/assets/1d7b41bc-c5cd-42cc-8605-e7009d782315" />
+
+
+
+
+
+
+
 
 ---
 
