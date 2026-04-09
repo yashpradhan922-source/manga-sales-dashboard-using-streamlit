@@ -35,9 +35,9 @@ An interactive data visualization dashboard built using **Streamlit, Pandas, and
 ```
 manga-dashboard/
 │
-├── app.py
+├── manga.py
 ├── README.md
-└── sample_data.csv (optional)
+└── manga_dashboard_data.csv (optional)
 ```
 
 ---
