@@ -1,82 +1,183 @@
 # 📊 Manga Sales Dashboard
 
-An interactive data visualization dashboard built using **Streamlit, Pandas, and Plotly** to analyze best-selling manga data.
+An interactive **Manga Sales Analytics Dashboard** built using **Streamlit, Pandas, and Plotly**.
+This project helps users explore manga sales data, identify trends, and generate insights through dynamic visualizations and basic machine learning forecasting.
 
 ---
 
-## 🚀 Features
+# 🚀 Features
 
-* 📂 Upload your own CSV dataset
-* 🔍 Search manga by name
-* 🎛 Dynamic filters (Publisher, Demographic)
-* 📊 KPI metrics (Total Sales, Series Count, etc.)
-* 📈 Interactive charts:
-
-  * Bar chart (Top Manga)
-  * Pie chart (Publisher distribution)
-  * Scatter plot (Sales vs Volumes)
-* 🎨 Dark/Light theme toggle
-* 📌 Automated insights generation
-* ⬇ Download filtered dataset
+✅ Upload your own CSV dataset
+✅ Automatic column detection (no strict schema required)
+✅ Interactive filters (Search, Publisher, Demographic)
+✅ Dark / Light theme toggle 🌙☀️
+✅ Key Performance Indicators (KPIs)
+✅ Multiple interactive visualizations
+✅ Sales forecasting using Machine Learning 🤖
+✅ Download filtered dataset
 
 ---
 
-## 🛠 Tech Stack
+# 🧠 Problem Statement
 
-* Python
-* Streamlit
-* Pandas
-* Plotly
+Raw sales data is difficult to interpret and analyze efficiently.
+This dashboard converts raw manga sales data into **visual insights**, enabling users to:
+
+* Identify top-performing manga
+* Analyze publisher contributions
+* Understand demographic trends
+* Forecast future sales
 
 ---
 
-## 📁 Project Structure
+# 🛠️ Tech Stack
+
+* **Python**
+* **Streamlit** – UI & dashboard
+* **Pandas** – Data processing
+* **Plotly Express** – Interactive charts
+* **Scikit-learn** – Linear Regression (ML model)
+* **NumPy**
+
+---
+
+# 📂 Project Structure
 
 ```
-manga-dashboard/
+manga-sales-dashboard/
 │
-├── manga.py
+├── app/
+│   └── streamlit_app.py
+│
+├── data/
+│   └── sample_data.csv
+│
+├── requirements.txt
 ├── README.md
-└── manga_dashboard_data.csv (optional)
 ```
 
 ---
 
-## ▶️ How to Run
+# 📥 Installation & Setup
 
-### 1. Clone the repository
+### 1️⃣ Clone the repository
 
+```bash
+git clone https://github.com/manga-sales-dashboard-using-streamlit/manga-sales-dashboard.git
+cd manga-sales-dashboard
 ```
-git clone https://github.com/your-username/manga-dashboard.git
-cd manga-dashboard
+
+### 2️⃣ Create virtual environment (optional)
+
+```bash
+python -m venv venv
+venv\Scripts\activate   # Windows
 ```
 
-### 2. Install dependencies
+### 3️⃣ Install dependencies
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the app
+---
 
-```
-streamlit run app.py
+# ▶️ Run the Application
+
+```bash
+streamlit run app/streamlit_app.py
 ```
 
 ---
 
-## 📦 Requirements
+# 📊 Dashboard Functionalities
 
-Create a `requirements.txt` file:
+## 🔍 Filters
 
-```
-streamlit
-pandas
-plotly
-statsmodels
-```
+* Search Manga by name
+* Filter by Publisher
+* Filter by Demographic
+* Select Top N Manga
 
 ---
+
+## 📈 Visualizations
+
+* 🔥 Top Selling Manga (Bar Chart)
+* 🏢 Publisher-wise Sales (Donut Chart)
+* 👥 Demographic-wise Sales (Bar Chart)
+* 📈 Sales vs Volume (Scatter Plot with Trendline)
+
+---
+
+## 📌 KPIs
+
+* Total Manga Series
+* Total Sales
+* Average Sales per Volume
+* Total Publishers
+
+---
+
+# 🤖 Machine Learning Feature
+
+The dashboard includes a **Linear Regression model** that:
+
+* Predicts future sales based on volumes
+* Displays growth percentage
+* Visualizes forecast trends
+
+---
+
+# 📁 Dataset Requirements
+
+The dashboard automatically detects columns. However, your dataset should ideally contain:
+
+* `Series / Title`
+* `Sales`
+* `Volume`
+* `Publisher`
+* `Demographic`
+* `Collected Volumes` (optional)
+
+---
+
+# 📸 Preview
+
+*Add screenshots here (recommended for GitHub visibility)*
+
+---
+
+# 🔥 Key Highlights
+
+* Dynamic column detection (no fixed schema required)
+* Interactive UI with real-time filtering
+* Built-in ML forecasting
+* Clean and modern UI with theme toggle
+
+---
+
+# 📌 Future Improvements
+
+* Add advanced ML models (XGBoost, Time Series)
+* Deploy on cloud (Streamlit Cloud / AWS)
+* Add user authentication
+* Real-time data integration
+
+---
+
+# 🙌 Author
+
+**Yash Pradhan**
+📧 [yashpradhan922@gmail.com](mailto:yashpradhan922@gmail.com)
+🔗 GitHub: https://github.com/yashpradhan922-source
+
+---
+
+# ⭐ If you like this project
+
+Give it a ⭐ on GitHub and share your feedback!
+
 
 ## 📸 Screenshots
 
@@ -93,32 +194,3 @@ statsmodels
 
 
 
----
-
-## 💡 Use Cases
-
-* Data analysis projects
-* Portfolio projects for Data Science
-* Business dashboards
-* Academic visualization
-
----
-
-## 📈 Future Improvements
-
-* Machine Learning prediction (sales forecasting)
-* Deployment on Streamlit Cloud / AWS
-* User authentication
-* Real-time data integration
-
----
-
-## 👨‍💻 Author
-
-**Yash Pradhan**
-
----
-
-## ⭐ If you like this project
-
-Give it a star ⭐ on GitHub!
